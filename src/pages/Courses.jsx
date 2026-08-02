@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, Code, Server, Cloud, Cpu, Terminal, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const coursesData = [
   {
@@ -189,12 +190,12 @@ const Courses = () => {
               </div>
 
               <div className="mt-8">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="inline-block px-8 py-3 bg-primary hover:bg-primary-dark text-white rounded-lg font-semibold transition-colors shadow-[0_0_15px_rgba(14,165,233,0.3)]"
                 >
                   Enroll Now
-                </a>
+                </Link>
               </div>
             </motion.div>
           </AnimatePresence>

@@ -22,9 +22,9 @@ const Navbar = () => {
       <div className="w-full px-4 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center gap-3">
-              <img src={logo} alt="Tech-Bengaluru Logo" className="h-16 w-auto object-contain" />
-              <span className="font-bold text-2xl tracking-tight text-white">Tech - Bengaluru</span>
+            <Link to="/" className="flex items-center gap-2 md:gap-3">
+              <img src={logo} alt="Tech-Bengaluru Logo" className="h-12 md:h-16 w-auto object-contain" />
+              <span className="font-bold text-lg md:text-2xl tracking-tight text-white">Tech - Bengaluru</span>
             </Link>
           </div>
           

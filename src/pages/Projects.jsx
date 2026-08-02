@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Code2, Monitor, Server, Database, Cpu } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const softwareProjects = [
   "Projects from scratch", "Portfolio websites", "ERP", "CRM", "AI Chatbot", "E-Commerce", "Hospital Management", "College Management", "Banking App", "Ride Sharing", "Food Delivery", "Inventory Management", "Student Management", "HRMS", "Real-world SaaS applications"
@@ -134,9 +135,9 @@ const Projects = () => {
       </div>
       
       <div className="mt-16 text-center">
-        <a href="/contact" className="inline-block px-8 py-4 bg-primary hover:bg-primary-dark text-white rounded-lg font-semibold text-lg transition-all shadow-[0_0_20px_rgba(14,165,233,0.4)]">
+        <Link to="/contact" className="inline-block px-8 py-4 bg-primary hover:bg-primary-dark text-white rounded-lg font-semibold text-lg transition-all shadow-[0_0_20px_rgba(14,165,233,0.4)]">
           Start Building Projects Like These
-        </a>
+        </Link>
       </div>
     </div>
   );

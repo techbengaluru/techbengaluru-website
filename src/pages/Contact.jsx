@@ -29,19 +29,21 @@ const Contact = () => {
         formDataObj.append(key, formData[key]);
       });
 
-      await fetch(GOOGLE_SCRIPT_URL, {
+      // Fire and forget: We don't await the fetch so the UI updates instantly
+      fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
         body: formDataObj
-      });
+      }).catch(err => console.error('Background fetch error:', err));
       
+      // Instantly show success
       setStatus('success');
       setFormData({ name: '', phone: '', email: '', course: 'Data Analytics', message: '' });
-      setTimeout(() => setStatus('idle'), 5000);
+      setTimeout(() => setStatus('idle'), 4000);
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error('Error in form setup:', error);
       setStatus('error');
-      setTimeout(() => setStatus('idle'), 5000);
+      setTimeout(() => setStatus('idle'), 4000);
     }
   };
 

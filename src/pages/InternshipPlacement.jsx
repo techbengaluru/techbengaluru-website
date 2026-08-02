@@ -77,20 +77,13 @@ const InternshipPlacement = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-white mb-4">Internship Program</h2>
           <p className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed mb-12">
-            Exclusive Internship in collaboration with <span className="text-primary font-semibold">Techmiya Solutions</span> and <span className="text-primary font-semibold">Xciencia Technology</span>. Designed specifically for all MCA, BCA, and BE/B.Tech students to gain real-time, hands-on project experience.
+            Exclusive Internship Program designed specifically for BE/B.Tech, MCA, MBA, B.Com, BBA, BCA, and Diploma students to gain real-time, hands-on project experience.
           </p>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 bg-dark-card border border-gray-800 p-8 rounded-2xl max-w-4xl mx-auto shadow-xl">
-            <div className="flex items-center gap-6">
-              <img src={techmiyaLogo} alt="Techmiya Solutions" className="h-16 md:h-20 w-auto object-contain bg-white rounded-lg p-2" />
-              <div className="h-16 w-px bg-gray-800 hidden md:block"></div>
-              <img src={xcienciaLogo} alt="Xciencia Technology" className="h-16 md:h-20 w-auto object-contain bg-white rounded-lg p-2" />
-            </div>
-            <div className="md:border-l border-gray-800 md:pl-16 text-center md:text-left">
-              <div className="text-4xl font-black text-primary mb-2">200+</div>
-              <div className="text-gray-200 font-semibold text-lg">Startups & MNC Companies</div>
-              <div className="text-sm text-gray-500 mt-1 uppercase tracking-wider font-medium">Hiring Partners</div>
-            </div>
+          <div className="bg-dark-card border border-gray-800 p-8 rounded-2xl max-w-xl mx-auto shadow-xl text-center">
+            <div className="text-5xl font-black text-primary mb-2">200+</div>
+            <div className="text-gray-200 font-semibold text-xl">Startups & MNC Companies</div>
+            <div className="text-sm text-gray-500 mt-2 uppercase tracking-wider font-medium">Hiring Partners</div>
           </div>
         </div>
 
